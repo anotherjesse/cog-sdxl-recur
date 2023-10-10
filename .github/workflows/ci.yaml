@@ -17,4 +17,5 @@ jobs:
     
     - name: Run CLI
       run: |
+        echo $COG_TOKEN
         make push
