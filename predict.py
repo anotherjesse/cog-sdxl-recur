@@ -44,7 +44,7 @@ def scale_image(img, scale):
 
 
 SDXL_MODEL_CACHE = "./sdxl-cache"
-SDXL_URL = "https://weights.replicate.delivery/default/sdxl/sdxl-vae-fix-1.0.tar"
+SDXL_URL = "https://weights.replicate.delivery/default/sdxl/sdxl-vae-upcast-fix.tar"
 
 
 class KarrasDPM:
