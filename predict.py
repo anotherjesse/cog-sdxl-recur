@@ -119,11 +119,11 @@ class Predictor(BasePredictor):
             default=None,
         ),
         width: int = Input(
-            description="Width of output image",
+            description="Width of output image (ignored if image is provided)",
             default=1024,
         ),
         height: int = Input(
-            description="Height of output image",
+            description="Height of output image (ignored if image is provided)",
             default=1024,
         ),
         steps: int = Input(
