@@ -179,8 +179,8 @@ class Predictor(BasePredictor):
             if image:
                 args["image"] = image
                 args["strength"] = prompt_strength
-                del args["width"]
-                del args["height"]
+                args.pop("width", None)
+                args.pop("height", None)
                 pipe = self.img2img_pipe
             else:
                 args["width"] = width
