@@ -14,8 +14,10 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    
+
+    - name: Debug Environment Variable
+      run: echo "COG_TOKEN is set to ${COG_TOKEN:+set}"
+
     - name: Run CLI
       run: |
-        echo $COG_TOKEN
         make push
