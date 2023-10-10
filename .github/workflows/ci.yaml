@@ -8,7 +8,9 @@ on:
 jobs:
   run-cli:
     runs-on: ubuntu-latest
-    
+    env:
+      COG_TOKEN: ${{ secrets.COG_TOKEN }}
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
