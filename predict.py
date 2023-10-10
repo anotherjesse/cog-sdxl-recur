@@ -126,19 +126,6 @@ class Predictor(BasePredictor):
             description="Height of output image",
             default=1024,
         ),
-        scheduler: str = Input(
-            description="scheduler",
-            choices=[
-                "DDIM",
-                "DPMSolverMultistep",
-                "HeunDiscrete",
-                "KarrasDPM",
-                "K_EULER_ANCESTRAL",
-                "K_EULER",
-                "PNDM",
-            ],
-            default="K_EULER",
-        ),
         steps: int = Input(
             description="Number of denoising steps per image", ge=1, le=500, default=10
         ),
@@ -152,6 +139,19 @@ class Predictor(BasePredictor):
             ge=0.0,
             le=1.0,
             default=0.8,
+        ),
+        scheduler: str = Input(
+            description="scheduler",
+            choices=[
+                "DDIM",
+                "DPMSolverMultistep",
+                "HeunDiscrete",
+                "KarrasDPM",
+                "K_EULER_ANCESTRAL",
+                "K_EULER",
+                "PNDM",
+            ],
+            default="K_EULER",
         ),
         seed: int = Input(
             description="Random seed. Leave blank to randomize the seed", default=None
@@ -173,7 +173,6 @@ class Predictor(BasePredictor):
             "generator": generator,
             "num_inference_steps": steps,
         }
-
 
         for frame in range(frames):
             if image:
