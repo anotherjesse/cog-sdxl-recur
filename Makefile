@@ -1,5 +1,5 @@
 push:
-	./yolo push --base "r8.im/stability-ai/sdxl@sha256:1bfb924045802467cf8869d96b231a12e6aa994abfe37e337c63a4e49a8c6c41" \
+	./yolo push --base "r8.im/stability-ai/sdxl@sha256:c221b2b8ef527988fb59bf24a8b97c4561f1c671f73bd389f866bfb27c061316" \
 	--dest r8.im/anotherjesse/sdxl-recur \
 	--ast predict.py \
 	--commit $(shell git rev-parse HEAD) \
