@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       COG_TOKEN: ${{ secrets.COG_TOKEN }}
+      TEST_API: ${{ secrets.TEST_API }}
 
     steps:
     - name: Checkout code
