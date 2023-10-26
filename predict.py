@@ -115,7 +115,7 @@ class Predictor(BasePredictor):
             default="",
         ),
         image: Path = Input(
-            description="rather than starting with txt2img generating the first frame, you can send your own (optional)",
+            description="instead of starting with txt2img generating the first frame, you can send your own (optional)",
             default=None,
         ),
         width: int = Input(
