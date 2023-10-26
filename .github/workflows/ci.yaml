@@ -9,7 +9,7 @@ jobs:
   run-cli:
     runs-on: ubuntu-latest
     env:
-      COG_TOKEN: ${{ secrets.COG_TOKEN }}
+      REPLICATE_API_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
       TEST_API: ${{ secrets.TEST_API }}
 
     steps:
