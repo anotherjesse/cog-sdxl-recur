@@ -1,0 +1,11 @@
+{
+    "zoom": 1.05,
+    "steps": 10,
+    "width": 768,
+    "frames": 30,
+    "height": 768,
+    "prompt": "mystical macro of molecules",
+    "scheduler": "K_EULER",
+    "guidance_scale": 7.5,
+    "prompt_strength": 0.8
+}
