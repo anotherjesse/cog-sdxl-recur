@@ -1,0 +1,13 @@
+{
+    "zoom": 1.05,
+    "image": "https://replicate.delivery/pbxt/fxdaaTVJPa20fUHIdUDvrWFu7yBeITST8DvkhLiXbMkgVjajA/0009.jpg",
+    "steps": 10,
+    "width": 1024,
+    "frames": 10,
+    "height": 1024,
+    "prompt": "Delve into the microcosmic realm: witness the mesmerizing dance of cellular intricacies",
+    "scheduler": "K_EULER",
+    "guidance_scale": 7.5,
+    "negative_prompt": "",
+    "prompt_strength": 0.8
+}
