@@ -12,10 +12,6 @@ endif
 
 TEST_API ?= http://localhost:4000
 
-SMOKE := $(wildcard samples/*.json)
-
-.PHONY: smoke $(SMOKE)
-
 all: push
 
 yolo:
